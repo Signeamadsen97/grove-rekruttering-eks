@@ -1,0 +1,286 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+/*font-family: 'Gotham', sans-serif;
+font-family: 'Gotham Black', sans-serif;
+font-family: 'Gotham Light', sans-serif;
+font-family: 'Gotham Thin', sans-serif;
+font-family: 'Gotham XLight', sans-serif;
+font-family: 'Gotham Book', sans-serif;
+font-family: 'Gotham Ultra', sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #F5F5F5;
+
+}
+
+.body-index {
+    background-image: url(img/baggrund.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+    height: 900px;
+}
+
+/*navigation*/
+.navigtaion-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-left: 15%;
+    margin-top: 1%;
+    font-family: 'Gotham', sans-serif;
+    font-weight: ;
+}
+
+.hvid-tekst {
+    color: white;
+}
+
+.blå-tekst {
+    color: #023E8A;
+}
+
+.blå-tekst-kontakt {
+    color: #023E8A;
+}
+
+
+/*forside header*/
+.forside-overskrift {
+    font-family: 'Gotham', sans-serif;
+    font-weight: bold;
+}
+
+.forside-underoverskrift {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300;
+    margin-top: 5%;
+}
+
+.læs-mere {
+    font-family: 'Gotham Light', sans-serif;
+    margin-top: 6%;
+    margin-bottom: 30%;
+}
+
+.forside-overskift-container {
+    line-height: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+/* forside main*/
+
+.forside-overskrift-testemonial {}
+
+
+.forside-overskrift-testemonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham', sans-serif;
+    font-weight: bolder;
+    color: #023E8A;
+    text-align: center;
+}
+
+.forside-main-overskrift {
+    font-size: xx-large;
+}
+
+.testemonials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.testemonial-indhold {
+    width: 25%;
+    font-family: 'Gotham Light', sans-serif;
+}
+
+.forside-det-tilbyder-vi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.forside-det-tilbyder-vi-overskrift {
+    font-family: 'Gotham', sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: #FF9557;
+}
+
+.forside-tilbud-overskrift {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+}
+
+.forside-det-tilbyder-vi-indhold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    font-family: 'Gotham Light', sans-serif;
+    color: #023E8A;
+    margin-top: 5%;
+}
+
+/*overskrift til alle sider på nær index*/
+
+.overskrift {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #023E8A;
+    background-color: #E1EEFF;
+    padding-top: 18%;
+    padding-bottom: 18%;
+}
+
+/* vores tilbud styling*/
+
+.vores-tilbud-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #023E8A;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+.tilbud-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.tilbud-indhold {
+    width: 25%;
+    font-family: 'Gotham Light', sans-serif;
+}
+
+.tilbud-overskrift {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 900;
+}
+
+.tilbud-underoverskrift {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+}
+
+
+/* om os styling */
+
+.vores-værdier-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: #023E8A;
+}
+
+.vores-værdier-indhold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.vores-værdier-overskrift {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.vores-værdier {
+    font-family: 'Gotham Light', sans-serif;
+    width: 25%;
+}
+
+.vores-værdier-underoverskrift {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+}
+
+/*footer styling*/
+
+.footer-border {
+    border: #023E8A;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-width: 5px;
+    margin-bottom: 2px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-top: 2%;
+    font-family: 'Gotham Light', sans-serif;
+    color: #023E8A;
+
+}
+
+.footer-overskrift {
+    font-family: 'Gotham', sans-serif;
+    margin-top: 2%;
+}
+
+.footer-indhold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.footer-kontakt {
+    line-height: 30px;
+    margin-bottom: 3%;
+}
+
+.footer-copyright {
+    margin-bottom: 3%;
+}
