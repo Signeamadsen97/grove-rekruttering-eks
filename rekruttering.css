@@ -52,6 +52,11 @@ body {
 
 .blå-tekst-kontakt {
     color: #023E8A;
+    background-image: url(img/call-to-action-3.svg);
+    display: inline;
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
 }
 
 
@@ -201,6 +206,29 @@ body {
     font-weight: 500;
 }
 
+.tidslinje-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 200%;
+}
+
+.tidslinje-højre {
+    border: #023E8A;
+    border-style: solid;
+    text-align: center;
+    margin-top: 5%;
+    border-radius: 40px;
+}
+
+.tidslinje-venstre {
+    border: #023E8A;
+    border-style: solid;
+    text-align: center;
+    margin-top: 5%;
+    border-radius: 40px;
+}
 
 /* om os styling */
 
