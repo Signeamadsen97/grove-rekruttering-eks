@@ -22,48 +22,24 @@ body {
 }
 
 .body-index {
-    background-image: url(img/baggrund.svg);
+    background-image: url(img/baggrund-2.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: local;
     background-position: center;
-    height: 900px;
+    height: 700px;
 }
 
 /*navigation*/
-.navigtaion-links {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-around;
-    margin-left: 15%;
-    margin-top: 1%;
-    font-family: 'Gotham', sans-serif;
-    font-weight: ;
-}
 
-.hvid-tekst {
-    color: white;
-}
-
-.blå-tekst {
-    color: #023E8A;
-}
-
-.blå-tekst-kontakt {
-    color: #023E8A;
-    background-image: url(img/call-to-action-3.svg);
-    display: inline;
-    height: 200px;
-    width: 200px;
-    background-repeat: no-repeat;
-}
 
 
 /*forside header*/
 .forside-overskrift {
     font-family: 'Gotham', sans-serif;
     font-weight: bold;
+    font-size: xx-large;
+    word-spacing: 8px;
 }
 
 .forside-underoverskrift {
@@ -103,10 +79,13 @@ body {
     font-weight: bolder;
     color: #023E8A;
     text-align: center;
+
 }
 
 .forside-main-overskrift {
     font-size: xx-large;
+    margin-bottom: 5%;
+    margin-top: 10%;
 }
 
 .testemonials {
@@ -128,6 +107,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 15%;
+    margin-bottom: 10%;
 }
 
 .forside-det-tilbyder-vi-overskrift {
@@ -215,15 +195,18 @@ body {
     font-family: 'Gotham', sans-serif;
     font-weight: 400;
     color: #023E8A;
+
 }
 
 .tidslinje-overskrift {
     font-family: 'Gotham', sans-serif;
     font-weight: 900;
+    font-size: xx-large;
 }
 
 .tidslinje-højre {
     border: #023E8A;
+    background-color: #E1EEFF;
     border-style: solid;
     text-align: center;
     margin-top: 5%;
@@ -235,6 +218,7 @@ body {
 
 .tidslinje-venstre {
     border: #023E8A;
+    background-color: #E1EEFF;
     border-style: solid;
     text-align: center;
     border-radius: 40px;
@@ -245,6 +229,19 @@ body {
 
 /* om os styling */
 
+.om-os-tekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham Light', sans-serif;
+    color: #023E8A;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    line-height: 30px;
+}
+
 .vores-værdier-container {
     display: flex;
     flex-direction: column;
@@ -252,6 +249,7 @@ body {
     justify-content: center;
     margin-top: 10%;
     margin-bottom: 10%;
+
 }
 
 .vores-værdier-indhold {
@@ -261,12 +259,14 @@ body {
     align-items: center;
     width: 80%;
     margin-top: 5%;
+    color: #023E8A;
 }
 
 .vores-værdier-overskrift {
     font-family: 'Gotham', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: xx-large;
+    color: #023E8A;
 }
 
 .vores-værdier {
@@ -278,6 +278,12 @@ body {
     font-family: 'Gotham', sans-serif;
     font-weight: 500;
 }
+
+/* vores recruitere*/
+
+
+
+
 
 /*footer styling*/
 
