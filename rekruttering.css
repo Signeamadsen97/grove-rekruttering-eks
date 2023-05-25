@@ -104,34 +104,34 @@ body {
 .forside-det-tilbyder-vi {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-bottom: 10%;
-}
-
-.forside-det-tilbyder-vi-overskrift {
-    font-family: 'Gotham', sans-serif;
-    font-weight: bolder;
-    font-size: xx-large;
-    color: #FF9557;
-}
-
-.forside-tilbud-overskrift {
-    font-family: 'Gotham', sans-serif;
-    font-weight: 500;
 }
 
 .forside-det-tilbyder-vi-indhold {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     width: 80%;
-    font-family: 'Gotham Light', sans-serif;
-    color: #023E8A;
-    margin-top: 5%;
+    line-height: 30px;
 }
+
+.forside-det-tilbyder-vi-overskrift {
+    font-family: 'Gotham', sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #FF9557;
+}
+
+.forside-tilbud-beskrivelse {
+    width: 25%;
+    margin-top: 5%;
+    font-family: 'Gotham Light', sans-serif;
+    font-weight: 900;
+    color: #023E8A;
+}
+
 
 /*overskrift til alle sider på nær index*/
 
@@ -174,6 +174,7 @@ body {
 .tilbud-indhold {
     width: 25%;
     font-family: 'Gotham Light', sans-serif;
+    line-height: 25px;
 }
 
 .tilbud-overskrift {
@@ -246,7 +247,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 10%;
     margin-bottom: 10%;
 
@@ -272,6 +273,7 @@ body {
 .vores-værdier {
     font-family: 'Gotham Light', sans-serif;
     width: 25%;
+    line-height: 25px;
 }
 
 .vores-værdier-underoverskrift {
@@ -281,9 +283,80 @@ body {
 
 /* vores recruitere*/
 
+.vores-recruitere-indledning {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-family: 'Gotham Light', sans-serif;
+    line-height: 30px;
+    color: #023E8A;
+}
+
+.vores-recruitere-accordian {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    width: ;
+}
+
+/*.vores-recruitere-accordian {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+
+.vores-recruitere-opsaetning {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gotham Light', sans-serif;
+}
+
+.recruitere-accordian {
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.recruitere-praesentation {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    color: #023E8A;
+
+}
+
+.recruitere-accordian-indhold {
+    width: 200px;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+}*/
 
 
+/*kontakt*/
 
+/*kontakt formular*/
+
+
+.kontakt-formular {
+
+    background-image: url(img/kontaktformular-lys.svg);
+    height: 800px;
+    background-repeat: no-repeat;
+
+
+}
+
+display: inline;
+padding-right: 20px;
+background-image: url(../images/ourlocation.jpg);
+background-repeat: no-repeat;
+background-position: 0 -.2em;
+
+.kontakt-formular-overskrift {
+    font-family: 'Gotham', sans-serif;
+}
 
 /*footer styling*/
 
@@ -320,7 +393,13 @@ body {
     width: 70%;
     margin-top: 4%;
     margin-bottom: 3%;
+    color: #023E8A;
 }
+
+.footer-link {
+    color: #023E8A;
+}
+
 
 .footer-kontakt {
     line-height: 30px;
