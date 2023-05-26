@@ -292,46 +292,49 @@ body {
     color: #023E8A;
 }
 
+/*accordian*/
+
 .vores-recruitere-accordian {
     margin-top: 10%;
     margin-bottom: 10%;
     display: flex;
     flex-direction: row;
-    width: ;
-}
-
-/*.vores-recruitere-accordian {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    width: 80%;
     margin-left: 10%;
+    font-family: 'Gotham Light', sans-serif;
+    color: #023E8A;
 }
 
-.vores-recruitere-opsaetning {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Gotham Light', sans-serif;
-}
 
 .recruitere-accordian {
     border: none;
     background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.portræt-recruiter {
+    width: 200px;
 }
 
 .recruitere-praesentation {
-    font-family: 'Gotham', sans-serif;
-    font-weight: 500;
     color: #023E8A;
-
+    font-family: 'Gotham Light', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 .recruitere-accordian-indhold {
-    width: 200px;
-    text-align: center;
+    width: 220px;
     display: none;
     overflow: hidden;
-}*/
+    line-height: 25px;
+    background-color: #E1EEFF;
+}
 
 
 /*kontakt*/
