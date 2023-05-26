@@ -518,16 +518,16 @@ button[type="submit"]:hover {
     }
 
     .forside-overskrift-testemonial {
-        margin-top: 300px;
+        margin-top: 400px;
     }
 
     .forside-det-tilbyder-vi-indhold {
         flex-direction: column;
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     .forside-tilbud-indhold {
-        width: 300px;
+        width: 400px;
         margin-top: 30px;
     }
 
