@@ -8,6 +8,7 @@
     <title>Mød vores recruitere</title>
     <link rel="stylesheet" href="rekruttering.css">
     <script src="js/accordian.js" defer></script>
+
 </head>
 
 <body>
@@ -31,7 +32,7 @@
 
             <div class="vores-recruitere-opsaetning">
                 <button class="recruitere-accordian">
-                    <img class="portræt-recruiter" src="img/henrik-2.png" alt="portraet">
+                    <img class="portraet-henrik" src="img/henrik-2.png" alt="portraet">
                     <span class="recruitere-praesentation">Henrik <br> Indehaver og Recruiter</span>
                 </button>
 
@@ -45,7 +46,7 @@
 
             <div class="vores-recruitere-opsaetning">
                 <button class="recruitere-accordian">
-                    <img class="portræt-recruiter" src="img/henrik-2.png" alt="portraet">
+                    <img class="portraet-katja" src="img/katja-2.png" alt="portraet">
                     <span class="recruitere-praesentation">Katja <br> Recruiter</span>
                 </button>
 
@@ -62,13 +63,13 @@
 
             <div class="vores-recruitere-opsaetning">
                 <button class="recruitere-accordian">
-                    <img class="portræt-recruiter" src="img/henrik-2.png" alt="portraet">
-                    <span class="recruitere-praesentation">Ali <br> Recruiter</span>
+                    <img class="portraet-allan" src="img/alan-2.png" alt="portraet">
+                    <span class="recruitere-praesentation">Allan <br> Recruiter</span>
                 </button>
 
                 <div class="recruitere-accordian-indhold">
                     <p>
-                        Ali bringer 8 års erfaring og et stort netværk indenfor IT og kommunikation. Ali bruger sit
+                        Allan bringer 8 års erfaring og et stort netværk indenfor IT og kommunikation. Ali bruger sit
                         netværk til at finde den rette kandidat ved at kigge på din virksomheds værdier og finde frem
                         til et match.
                     </p>
@@ -76,6 +77,34 @@
             </div>
         </div>
     </main>
+
+
+    <div class="kontaktformular-container">
+        <h2 class="kontaktformular-overskrift">Vi vil meget gerne hører fra dig </h2>
+        <p class="kontaktformular-underoverskrift">Vi står altid klar til en uforpligtende snak. Udfyld formularen,
+            så vender vi tilbage indenfor 24 timer.</p>
+        <form id="Kontaktformular">
+            <div class="form-group">
+                <label for="name">Navn:</label>
+                <input type="text" id="navn" name="navn" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobil">Mobil:</label>
+                <input type="mobil" id="email" name="mobile" required>
+            </div>
+            <div class="form-group">
+                <label for="besked">Besked:</label>
+                <textarea id="besked" name="besked" required></textarea>
+            </div>
+            <button class="indsend" type="submit">indsend</button>
+        </form>
+    </div>
+
+
 
     <footer>
         <div class="footer-border">

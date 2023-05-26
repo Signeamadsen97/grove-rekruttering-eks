@@ -316,8 +316,16 @@ body {
     margin-bottom: 10px;
 }
 
-.portræt-recruiter {
+.portraet-henrik {
     width: 200px;
+}
+
+.portraet-katja {
+    width: 250px;
+}
+
+.portraet-allan {
+    width: 300px;
 }
 
 .recruitere-praesentation {
@@ -333,7 +341,6 @@ body {
     display: none;
     overflow: hidden;
     line-height: 25px;
-    background-color: #E1EEFF;
 }
 
 
@@ -342,24 +349,68 @@ body {
 /*kontakt formular*/
 
 
-.kontakt-formular {
-
-    background-image: url(img/kontaktformular-lys.svg);
-    height: 800px;
-    background-repeat: no-repeat;
-
-
+.kontaktformular-container {
+    width: 60%;
+    height: 100%px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #E1EEFF;
+    border-radius: 40px;
+    margin-top: 10%;
 }
 
-display: inline;
-padding-right: 20px;
-background-image: url(../images/ourlocation.jpg);
-background-repeat: no-repeat;
-background-position: 0 -.2em;
-
-.kontakt-formular-overskrift {
+.kontaktformular-overskrift {
+    text-align: center;
+    color: #FF9557;
     font-family: 'Gotham', sans-serif;
+    margin-bottom: 20px;
 }
+
+.kontaktformular-underoverskrift {
+    font-family: 'Gotham Light', sans-serif;
+    color: #023E8A;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #023E8A;
+    font-family: 'Gotham Light', sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="mobil"],
+textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.indsend[type="submit"] {
+    background-color: #FF9557;
+    font-family: 'Gotham', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    color: #023E8A;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 40%;
+    text-align: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #023E8A;
+    color: #FF9557;
+}
+
+
 
 /*footer styling*/
 
@@ -370,6 +421,7 @@ background-position: 0 -.2em;
     border-right: none;
     border-width: 5px;
     margin-bottom: 2px;
+    margin-top: 10%;
 }
 
 .footer-container {

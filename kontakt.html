@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt os</title>
     <link rel="stylesheet" href="rekruttering.css">
+    <script src="js/accordian.js" defer></script>
 </head>
 
 <body>
@@ -15,9 +16,29 @@
         <h1 class="overskrift">Kontakt os</h1>
     </head>
     <main>
-
-        <div class="kontakt-formular">
-            <p>Vil du høre mere om, hvad vi kan gøre for dig?</p>
+        <div class="kontaktformular-container">
+            <h2 class="kontaktformular-overskrift">Vi vil meget gerne hører fra dig </h2>
+            <p class="kontaktformular-underoverskrift">Vi står altid klar til en uforpligtende snak. Udfyld formularen,
+                så vender vi tilbage indenfor 24 timer.</p>
+            <form id="Kontaktformular">
+                <div class="form-group">
+                    <label for="name">Navn:</label>
+                    <input type="text" id="navn" name="navn" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobil">Mobil:</label>
+                    <input type="mobil" id="email" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="besked">Besked:</label>
+                    <textarea id="besked" name="besked" required></textarea>
+                </div>
+                <button class="indsend" type="submit">indsend</button>
+            </form>
         </div>
     </main>
     <footer>
