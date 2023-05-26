@@ -67,8 +67,6 @@ body {
 
 /* forside main*/
 
-.forside-overskrift-testemonial {}
-
 
 .forside-overskrift-testemonial {
     display: flex;
@@ -412,6 +410,42 @@ button[type="submit"]:hover {
 
 
 
+/*kontakt knap*/
+
+.kontakt-knap-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Gotham Light', sans-serif;
+    color: #023E8A;
+    line-height: 25px;
+}
+
+.kontakt-knap {
+    margin-top: 20px;
+    width: 200px;
+    background-color: #FF9557;
+    font-family: 'Gotham', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.kontakt-link {
+    color: #023E8A;
+}
+
+.kontakt-knap :hover {
+    width: 300px;
+    font-size: larger;
+
+}
+
 /*footer styling*/
 
 .footer-border {
@@ -463,4 +497,89 @@ button[type="submit"]:hover {
 
 .footer-copyright {
     margin-bottom: 3%;
+}
+
+
+/* RESPONSIV MOBIL */
+@media (max-width: 500px) {
+
+    .forside-overskrift {
+        font-size: large;
+        word-spacing: 3px;
+    }
+
+    .forside-underoverskrift {
+        font-weight: 100;
+        font-size: medium;
+    }
+
+    .læs-mere {
+        font-size: small;
+    }
+
+    .forside-overskrift-testemonial {
+        margin-top: 300px;
+    }
+
+    .forside-det-tilbyder-vi-indhold {
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .forside-tilbud-indhold {
+        width: 300px;
+        margin-top: 30px;
+    }
+
+    .kontakt-knap-container {
+        width: 400px;
+        margin-left: 10%;
+    }
+
+    .footer-indhold {
+        flex-direction: column;
+        line-height: 30px;
+    }
+
+    .tilbud-container {
+        flex-direction: column;
+    }
+
+    .tilbud-indhold {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .tilbud-overskrift {
+        margin-left: 15%;
+        margin-bottom: 20px;
+    }
+
+    .tilbud-underoverskrift {
+        margin-bottom: -20px;
+    }
+
+    .tidslinje-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .vores-værdier-indhold {
+        flex-direction: column;
+    }
+
+    .vores-værdier {
+        width: 400px;
+    }
+
+    .vores-værdier-underoverskrift {
+        margin-top: 40px;
+        margin-bottom: -20px;
+    }
+
+    .vores-recruitere-accordian {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
