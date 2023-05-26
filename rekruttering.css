@@ -523,16 +523,16 @@ button[type="submit"]:hover {
 
     .forside-det-tilbyder-vi-indhold {
         flex-direction: column;
-        margin-left: 5%;
+        margin-left: 2%;
     }
 
     .forside-tilbud-indhold {
-        width: 400px;
+        width: 350px;
         margin-top: 30px;
     }
 
     .kontakt-knap-container {
-        width: 400px;
+        width: 300px;
         margin-left: 10%;
     }
 
@@ -546,12 +546,12 @@ button[type="submit"]:hover {
     }
 
     .tilbud-indhold {
-        width: 300px;
+        width: 350px;
         margin-bottom: 50px;
     }
 
     .tilbud-overskrift {
-        margin-left: 15%;
+        margin-left: 5%;
         margin-bottom: 20px;
     }
 
@@ -569,7 +569,7 @@ button[type="submit"]:hover {
     }
 
     .vores-værdier {
-        width: 400px;
+        width: 350px;
     }
 
     .vores-værdier-underoverskrift {
