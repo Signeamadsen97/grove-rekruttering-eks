@@ -692,30 +692,43 @@ button[type="submit"]:hover {
         flex-direction: column;
         align-items: center;
     }
+/*navigation*/
 
-    .nav-list .list-item {
-        display: list-item;
-       }
+.navbar {
+    position: fixed;
+    top: 0px;
+    background-color: #023E8A;
+    width: 100%;
+    padding: 10px 0 25px;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-100%);
     
-       nav a {
-        color: #F5F5F5;
-       }
-    
-       .logo {
-        color: #F5F5F5;
-       }
-    
-       .hamburger {
-        display: block;
-        margin-left: 380px;
-        position: fixed;
-        padding-top: 0px;
-        top: 20px;
-       }
-    
-       #arrow-up {
-        font-size: 40px; 
-        width: 60px;
-       }
+   }
+
+   .nav-list .list-item {
+    display: list-item;
+   }
+
+   nav a {
+    color: #F5F5F5;
+   }
+
+   .logo {
+    color: #F5F5F5;
+   }
+
+   .hamburger {
+    display: block;
+    margin-left: 380px;
+    position: fixed;
+    padding-top: 0px;
+    top: 20px;
+   }
+
+   #arrow-up {
+    font-size: 40px; 
+    width: 60px;
+   }
 
 }
