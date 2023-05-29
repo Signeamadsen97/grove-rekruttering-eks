@@ -2,7 +2,7 @@ startKarrusellen();
 //laver variablen i og giver den værdien 0, laver varibalen billeder som er et array med billeder,
 //skaber en varibel kaldet tid, som tildeles en værdi senere.
 var i = 0;
-var billeder = ["ny-karusel-1.svg", "ny-karusel-2.svg", "ny-karusel-3.svg"];
+var billeder = ["img/ny-karusel-1.svg", "img/ny-karusel-2.svg", "img/ny-karusel-3.svg"];
 var tid;
 
 //laver en funktion som skal få karrusellen til at køre med et defineret interval under. 
@@ -39,19 +39,19 @@ let tre = document.querySelector('.tre');
 //er lavet med en if else if statement
 function updateButtonStyles() {
     if (i == 0){
-        et.style.backgroundColor = 'black';
-            to.style.backgroundColor = 'white';
-            tre.style.backgroundColor = 'white';
+        et.style.backgroundColor = 'rgb(165, 165, 165)';
+            to.style.backgroundColor = 'rgb(207, 207, 207)';
+            tre.style.backgroundColor = 'rgb(207, 207, 207)';
     } else if (i== 1){
 
-        et.style.backgroundColor = 'white';
-        to.style.backgroundColor = 'black';
-        tre.style.backgroundColor = 'white';
+        et.style.backgroundColor = 'rgb(207, 207, 207)';
+        to.style.backgroundColor = 'rgb(165, 165, 165)';
+        tre.style.backgroundColor = 'rgb(207, 207, 207)';
     } else if (i == 2){
     
-        et.style.backgroundColor = 'white';
-        to.style.backgroundColor = 'white';
-        tre.style.backgroundColor = 'black';}
+        et.style.backgroundColor = 'rgb(207, 207, 207)';
+        to.style.backgroundColor = 'rgb(207, 207, 207)';
+        tre.style.backgroundColor = 'rgb(165, 165, 165)';}
 
           
 }

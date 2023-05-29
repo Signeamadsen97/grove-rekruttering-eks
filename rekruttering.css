@@ -741,3 +741,42 @@ button[type="submit"]:hover {
     }
 
 }
+
+.kasse{
+   width: 700px;
+   margin-left: 30%;
+   display: flex;
+   justify-content: center;
+}
+#imageGallery{
+   
+}
+.et{
+    
+height: 30px;
+width: 30px;
+border-radius: 50%;
+transition: all 300ms ease-in-out;
+border-width: 0px;
+background-color: rgb(207, 207, 207);
+
+}
+.to{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+    border-width: 0px;
+    background-color: rgb(207, 207, 207);
+
+    }
+    .tre{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        transition: all 300ms ease-in-out;
+        border-width: 0px;
+        background-color: rgb(207, 207, 207);
+
+        }
+

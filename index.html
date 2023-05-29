@@ -8,6 +8,7 @@
     <title>Grove rekruttering</title>
     <link rel="stylesheet" href="rekruttering.css">
     <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
+    <script src="js/carousel.js" defer></script>
 
 </head>
 
@@ -58,31 +59,17 @@
             <h3 class="forside-main-overskrift">
                 Vi har tidligere hjulpet andre IT <br> virksomheder på Fyn
             </h3>
-            <div class="testemonials">
-                <div class="testemonial-indhold">
-                    <img class="testemonial-logo-1" src="img/call-to-action-3.svg" alt="call to action">
-                    <p class="testemonial-tekst-1">"Processen var simpel og meget personlig, hvor jeg hele tiden
-                        følte
-                        at mine tanker var vigtige."
-                    </p>
-                </div>
-
-                <div class="testemonial-indhold">
-                    <img class="testemonial-logo-2" src="img/call-to-action-3.svg" alt="call to action">
-                    <p class="testemonial-tekst-2">"Processen var simpel og meget personlig, hvor jeg hele tiden
-                        følte
-                        at mine tanker var vigtige."
-                    </p>
-                </div>
-
-                <div class="testemonial-indhold">
-                    <img class="testemonial-logo-3" src="img/call-to-action-3.svg" alt="call to action">
-                    <p class="testemonial-tekst-3">"Processen var simpel og meget personlig, hvor jeg hele tiden
-                        følte
-                        at mine tanker var vigtige."
-                    </p>
-                </div>
+            
+        </div>
+        <div>
+            <div class="kasse">
+                <img id="imageGallery" src="img/ny-karusel-1.svg" />
             </div>
+            <form>
+                <input class="et" type="button" onclick="skiftBillede(1)">
+                <input class="to" type="button" onclick="skiftBillede(2)">
+                <input class="tre" type="button" onclick="skiftBillede(3)">
+            </form>
         </div>
 
         <div class="forside-det-tilbyder-vi">
