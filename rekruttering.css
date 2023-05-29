@@ -255,7 +255,7 @@ nav ul a:hover {
 .overskrift {
     font-family: 'Gotham', sans-serif;
     font-weight: 900;
-    font-size: xx-large;
+    font-size: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -799,6 +799,7 @@ background-color: rgb(165, 165, 165)
 .carouselknap{
     justify-content: center;
     display: flex;
+    margin-left: -20px;
   
     
     
