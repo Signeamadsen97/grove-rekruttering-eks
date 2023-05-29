@@ -767,7 +767,7 @@ button[type="submit"]:hover {
     margin: 30px;
  }
 .et{
-    
+cursor: pointer;    
 height: 22px;
 width:22px;
 border-radius: 50%;
@@ -777,6 +777,7 @@ background-color: rgb(165, 165, 165)
 
 }
 .to{
+    cursor: pointer;  
     height: 22px;
     width: 22px;
     border-radius: 50%;
@@ -786,6 +787,7 @@ background-color: rgb(165, 165, 165)
 
     }
     .tre{
+        cursor: pointer;  
         height: 22px;
         width: 22px;
         border-radius: 50%;

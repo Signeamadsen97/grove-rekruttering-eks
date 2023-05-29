@@ -1,10 +1,14 @@
 startKarrusellen();
 var i = 0;
-var billeder1 = ["img/ny-karusel-1.svg", "img/ny-karusel-2.svg", "img/ny-karusel-3.svg"];
-var billeder2 = ["img/ny-karusel-2.svg", "img/ny-karusel-3.svg", "img/ny-karusel-1.svg"];
-var billeder3 = ["img/ny-karusel-3.svg", "img/ny-karusel-1.svg", "img/ny-karusel-2.svg"];
+const billeder1 = ["img/ny-karusel-1.svg", "img/ny-karusel-2.svg", "img/ny-karusel-3.svg"];
+const billeder2 = ["img/ny-karusel-2.svg", "img/ny-karusel-3.svg", "img/ny-karusel-1.svg"];
+const billeder3 = ["img/ny-karusel-3.svg", "img/ny-karusel-1.svg", "img/ny-karusel-2.svg"];
 
 var tid;
+
+document.getElementById('imageGallery1').style.opacity = '0.3';
+           document.getElementById('imageGallery2').style.opacity = '1';
+           document.getElementById('imageGallery3').style.opacity = '0.3';
 
 function startKarrusellen() {
     tid = setInterval(nextImage, 5000);
@@ -47,17 +51,20 @@ function updateButtonStyles() {
         et.style.backgroundColor = 'rgb(165, 165, 165)';
             to.style.backgroundColor = 'rgb(207, 207, 207)';
             tre.style.backgroundColor = 'rgb(207, 207, 207)';
+           
+           
     } else if (i== 1){
 
         et.style.backgroundColor = 'rgb(207, 207, 207)';
         to.style.backgroundColor = 'rgb(165, 165, 165)';
         tre.style.backgroundColor = 'rgb(207, 207, 207)';
+       
     } else if (i == 2){
     
         et.style.backgroundColor = 'rgb(207, 207, 207)';
         to.style.backgroundColor = 'rgb(207, 207, 207)';
-        tre.style.backgroundColor = 'rgb(165, 165, 165)';}
-
+        tre.style.backgroundColor = 'rgb(165, 165, 165)';
+    }
           
 }
 function skiftBillede(klikket) {
