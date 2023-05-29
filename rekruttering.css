@@ -799,7 +799,7 @@ background-color: rgb(165, 165, 165)
 .carouselknap{
     justify-content: center;
     display: flex;
-    margin-left: -20px;
+  
     
     
 }
@@ -809,5 +809,94 @@ background-color: rgb(165, 165, 165)
    height: 530px;
 
 
+
+}
+@media (max-width: 1350px) {
+    .kasse{
+        display: flex;
+      justify-content: center;
+      height: 500px;
+      flex-direction: row;
+    
+      
+     
+    
+       
+    }
+    #imageGallery1 {
+       width: 250px;
+       margin: 30px;
+    
+    }
+    #imageGallery2 {
+        width:250px;
+        margin: 30px;
+     }
+     #imageGallery3 {
+        width: 250px;
+        margin: 30px;
+     }
+    
+    .carouselknap{
+        justify-content: center;
+        display: flex;
+        margin-left: -20px;
+        
+        
+    }
+    .helekarrusellen{
+        display: flex;
+       justify-content: center;
+       height: 530px;
+    
+    
+    
+    }
+
+}
+
+@media (max-width: 900px) {
+    .kasse{
+        display: flex;
+      justify-content: center;
+      height: 500px;
+      flex-direction: row;
+    
+      
+     
+    
+       
+    }
+    #imageGallery1 {
+       width: 250px;
+       margin: 30px;
+    display: none;
+    }
+    #imageGallery2 {
+        width:250px;
+        margin: 30px;
+     }
+     #imageGallery3 {
+        width: 250px;
+        margin: 30px;
+        display: none;
+     }
+    
+    .carouselknap{
+        
+        justify-content: center;
+        display: flex;
+        margin-left: -20px;
+        
+        
+    }
+    .helekarrusellen{
+        display: flex;
+       justify-content: center;
+       height: 530px;
+    
+    
+    
+    }
 
 }

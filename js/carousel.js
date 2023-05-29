@@ -1,8 +1,8 @@
 startKarrusellen();
 var i = 0;
-const billeder1 = ["img/ny-karusel-1.svg", "img/ny-karusel-2.svg", "img/ny-karusel-3.svg"];
-const billeder2 = ["img/ny-karusel-2.svg", "img/ny-karusel-3.svg", "img/ny-karusel-1.svg"];
-const billeder3 = ["img/ny-karusel-3.svg", "img/ny-karusel-1.svg", "img/ny-karusel-2.svg"];
+const billeder1 = ["img/ny-karusel-1.svg", "img/ny-karusel-2.svg", "img/ny-karrusel-3.svg"];
+const billeder2 = ["img/ny-karusel-2.svg", "img/ny-karrusel-3.svg", "img/ny-karusel-1.svg"];
+const billeder3 = ["img/ny-karrusel-3.svg", "img/ny-karusel-1.svg", "img/ny-karusel-2.svg"];
 
 var tid;
 
