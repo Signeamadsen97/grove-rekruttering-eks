@@ -35,8 +35,6 @@ body {
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
     font-size: large;
     font-family: 'Gotham Light', sans-serif;
     font-weight: bold;
@@ -89,7 +87,8 @@ nav ul a:hover {
     background-color: #FE9F67;
     padding: 8px 20px;
     border-radius: 1000px;
-    font-size: x-large;
+    margin-left: 8%;
+    font-size: large;
     cursor: pointer;
 }
 
