@@ -693,4 +693,29 @@ button[type="submit"]:hover {
         align-items: center;
     }
 
+    .nav-list .list-item {
+        display: list-item;
+       }
+    
+       nav a {
+        color: #F5F5F5;
+       }
+    
+       .logo {
+        color: #F5F5F5;
+       }
+    
+       .hamburger {
+        display: block;
+        margin-left: 380px;
+        position: fixed;
+        padding-top: 0px;
+        top: 20px;
+       }
+    
+       #arrow-up {
+        font-size: 40px; 
+        width: 60px;
+       }
+
 }
