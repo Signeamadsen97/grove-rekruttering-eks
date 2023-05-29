@@ -14,3 +14,9 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+setInterval(scrollCheck, 100);
+
+function scrollCheck() {
+  scrollFunction();
+}
