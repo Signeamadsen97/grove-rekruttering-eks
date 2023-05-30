@@ -20,9 +20,7 @@ function opdateredeBillede() {
 function timerStart() {
 tid = setInterval(autoSkift, 5000);
 }
-function timerStop() {
-    clearInterval(tid);
-}
+
 
 
 function autoSkift() {
@@ -89,7 +87,7 @@ function updateParagraph() {
 
 
 function skiftBillede(klikket) {
-    timerStop();
+    
    
     if (klikket === 1) {
         i = 0;
@@ -104,7 +102,7 @@ function skiftBillede(klikket) {
 
     opdateretKnap();
     opdateredeBillede();
-    timerStart();
+   
     
 }
 
