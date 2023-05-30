@@ -1,44 +1,49 @@
-startKarrusellen();
+timerStart();
+
+
 var i = 0;
+var tid;
 const billeder1 = ["img/ny-karusel-1.svg", "img/ny-karusel-2.svg", "img/ny-karrusel-3.svg"];
 const billeder2 = ["img/ny-karusel-2.svg", "img/ny-karrusel-3.svg", "img/ny-karusel-1.svg"];
 const billeder3 = ["img/ny-karrusel-3.svg", "img/ny-karusel-1.svg", "img/ny-karusel-2.svg"];
 
-var tid;
+
 
 document.getElementById('imageGallery1').style.opacity = '0.3';
-           document.getElementById('imageGallery2').style.opacity = '1';
-           document.getElementById('imageGallery3').style.opacity = '0.3';
-
-function startKarrusellen() {
-    tid = setInterval(nextImage, 5000);
-}
-function stopKarrusellen() {
-    clearInterval(tid);
-}
-function nextImage() {
-    i = (i + 1) % billeder1.length;
-    updateImage();
-    updateButtonStyles();
-}
-
-function nextImage() {
-    i = (i + 1) % billeder2.length;
-    updateImage();
-    updateButtonStyles();
-}
-
-function nextImage() {
-    i = (i + 1) % billeder3.length;
-    updateImage();
-    updateButtonStyles();
-}
+document.getElementById('imageGallery2').style.opacity = '1';
+document.getElementById('imageGallery3').style.opacity = '0.3';
 
 function updateImage() {
     document.getElementById("imageGallery1").src = billeder1[i];
     document.getElementById("imageGallery2").src = billeder2[i];
     document.getElementById("imageGallery3").src = billeder3[i];
 }
+
+function timerStart() {
+tid = setInterval(nextImage, 5000);
+}
+function timerStop() {
+    clearInterval(tid);
+}
+function autoSkift() {
+    i = (i + 1) % billeder1.length;
+    updateImage();
+    updateButtonStyles();
+}
+
+function autoSkift() {
+    i = (i + 1) % billeder2.length;
+    updateImage();
+    updateButtonStyles();
+}
+
+function autoSkift() {
+    i = (i + 1) % billeder3.length;
+    updateImage();
+    updateButtonStyles();
+}
+
+
 
 
 
@@ -68,7 +73,7 @@ function updateButtonStyles() {
           
 }
 function skiftBillede(klikket) {
-    stopKarrusellen();
+    timerStop();
 if (klikket === 1){
     i = 0
 } else if (klikket === 2) {
@@ -81,7 +86,7 @@ else if (klikket === 3) {
 
     updateImage();
     updateButtonStyles();
-    startKarrusellen();
+    timerStart();
 }
 
 

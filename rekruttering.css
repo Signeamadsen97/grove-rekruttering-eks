@@ -157,7 +157,7 @@ nav ul a:hover {
 .forside-overskrift {
     font-family: 'Gotham', sans-serif;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 50px;
     word-spacing: 8px;
 }
 
@@ -165,12 +165,14 @@ nav ul a:hover {
     font-family: 'Gotham', sans-serif;
     font-weight: 300;
     margin-top: 5%;
+    font-size: 30px;
 }
 
 .læs-mere {
     font-family: 'Gotham Light', sans-serif;
     margin-top: 6%;
     margin-bottom: 30%;
+    font-size: 20px;
 }
 
 .forside-overskift-container {
