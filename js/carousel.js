@@ -1,11 +1,7 @@
-timerStart();
 
-
-const billeder1 = ["img/billede1-tilkarrusel.svg", "img/billede2-tilkarrusel.svg", "img/billede3-tilkarrusel.svg"];
-const billeder2 = ["img/billede2-tilkarrusel.svg", "img/billede3-tilkarrusel.svg", "img/billede1-tilkarrusel.svg"];
-const billeder3 = ["img/billede3-tilkarrusel.svg", "img/billede1-tilkarrusel.svg", "img/billede2-tilkarrusel.svg"];
-
-
+let billeder1 = ["img/billede1-tilkarrusel.svg", "img/billede2-tilkarrusel.svg", "img/billede3-tilkarrusel.svg"];
+let billeder2 = ["img/billede2-tilkarrusel.svg", "img/billede3-tilkarrusel.svg", "img/billede1-tilkarrusel.svg"];
+let billeder3 = ["img/billede3-tilkarrusel.svg", "img/billede1-tilkarrusel.svg", "img/billede2-tilkarrusel.svg"];
 
 document.getElementById('imageGallery1').style.opacity = '0.3';
 document.getElementById('imageGallery2').style.opacity = '1';
@@ -17,12 +13,15 @@ function opdateredeBillede() {
     document.getElementById("imageGallery3").src = billeder3[i];
 }
 
+
+ 
 function timerStart() {
-tid = setInterval(autoSkift, 5000);
+setInterval(autoSkift, 5000);
 }
 
+timerStart();
 
-
+let i = 0;
 function autoSkift() {
     i = (i + 1) % billeder3.length;
     opdateredeBillede();
@@ -31,11 +30,7 @@ function autoSkift() {
 
 
 
- 
 
-var i = 0;
-var j = 0;
-var tid;
 let et = document.querySelector('.et');
 let to = document.querySelector('.to');
 let tre = document.querySelector('.tre');
@@ -67,22 +62,21 @@ var saetninger = ["Medarbejder rekrutteret til stillingen design og værktøjs m
 
 var beskrivelseafvirksomhed = document.getElementById("beskrivelsestekst");
 
-function updateParagraph() {
-  for (j = 0; j < saetninger.length; j++) {
-    setTimeout(function (vaerdi) {
-      return function () {
-             beskrivelseafvirksomhed.innerHTML = saetninger[vaerdi];
-
- 
-        if (vaerdi === saetninger.length - 1) {
-         
-          setTimeout(updateParagraph, 5000);
-        }
-      };
-    }(j), j * 5000);
+function skiftTekst() {
+    for (let j = 0; j < saetninger.length; j++) {
+      setTimeout(tidTimer(j), j * 5000);
+    }
   }
-}
-
+  
+  function tidTimer(vaerdi) {
+    return function () {
+      beskrivelseafvirksomhed.innerHTML = saetninger[vaerdi];
+  
+      if (vaerdi === saetninger.length - 1) {
+        setTimeout(opdaterTekst, 5000);
+      }
+    };
+  }
 
 
 
@@ -107,4 +101,4 @@ function skiftBillede(klikket) {
 }
 
 
-updateParagraph();
+skiftTekst();
