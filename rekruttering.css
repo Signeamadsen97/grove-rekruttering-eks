@@ -435,6 +435,10 @@ nav ul a:hover {
     margin-bottom: 10px;
 }
 
+.arrow-down {
+    color: #023E8A;
+}
+
 .portraet-henrik {
     width: 200px;
 }
