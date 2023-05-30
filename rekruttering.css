@@ -710,6 +710,10 @@ button[type="submit"]:hover {
         align-items: center;
     }
 
+    .overskrift {
+        font-size: 30px;
+    }
+
     /*navigation*/
 
     .navbar {
@@ -738,8 +742,8 @@ button[type="submit"]:hover {
 
     .hamburger {
         display: block;
-        margin-left: 380px;
         position: fixed;
+        margin-left: 330px;
         padding-top: 0px;
         top: 20px;
     }
