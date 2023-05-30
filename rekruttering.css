@@ -204,7 +204,8 @@ nav ul a:hover {
 .forside-main-overskrift {
     font-size: xx-large;
     margin-bottom: 5%;
-    margin-top: 10%;
+    margin-top: 4%;
+    
 }
 
 .testemonials {
@@ -588,6 +589,7 @@ button[type="submit"]:hover {
     margin-top: 2%;
     font-family: 'Gotham Light', sans-serif;
     color: #023E8A;
+    
 
 }
 
@@ -655,6 +657,7 @@ button[type="submit"]:hover {
     .kontakt-knap-container {
         width: 300px;
         margin-left: 10%;
+
     }
 
     .footer-indhold {
@@ -747,17 +750,25 @@ button[type="submit"]:hover {
 .kasse{
     display: flex;
   justify-content: center;
-  height: 500px;
+  height: 455px;
   flex-direction: row;
+  background-color: pink;
 
-  
- 
+}
+ #beskrivelsestekst{
+background-color: orange;
+width: 400px;
+height: 50px;
+font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+ }
 
    
-}
+
 #imageGallery1 {
    width: 400px;
    margin: 30px;
+   background-color: blue;
 
 }
 #imageGallery2 {
@@ -810,8 +821,9 @@ background-color: rgb(165, 165, 165)
     display: flex;
    justify-content: center;
    height: 530px;
-
-
+   background-color: green;
+   flex-direction: column;
+  align-items: center;
 
 }
 @media (max-width: 1350px) {

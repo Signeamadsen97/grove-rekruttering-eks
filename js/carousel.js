@@ -1,8 +1,6 @@
 timerStart();
 
 
-var i = 0;
-var tid;
 const billeder1 = ["img/ny-karusel-1.svg", "img/ny-karusel-2.svg", "img/ny-karrusel-3.svg"];
 const billeder2 = ["img/ny-karusel-2.svg", "img/ny-karrusel-3.svg", "img/ny-karusel-1.svg"];
 const billeder3 = ["img/ny-karrusel-3.svg", "img/ny-karusel-1.svg", "img/ny-karusel-2.svg"];
@@ -25,17 +23,7 @@ tid = setInterval(autoSkift, 5000);
 function timerStop() {
     clearInterval(tid);
 }
-function autoSkift() {
-    i = (i + 1) % billeder1.length;
-    opdateredeBillede();
-    opdateretKnap();
-}
 
-function autoSkift() {
-    i = (i + 1) % billeder2.length;
-    opdateredeBillede();
-    opdateretKnap();
-}
 
 function autoSkift() {
     i = (i + 1) % billeder3.length;
@@ -45,8 +33,10 @@ function autoSkift() {
 
 
 
+ 
 
-
+var i = 0;
+var tid;
 let et = document.querySelector('.et');
 let to = document.querySelector('.to');
 let tre = document.querySelector('.tre');
@@ -72,6 +62,11 @@ function opdateretKnap() {
     }
           
 }
+
+
+
+
+
 function skiftBillede(klikket) {
     timerStop();
 if (klikket === 1){
@@ -90,3 +85,26 @@ else if (klikket === 3) {
 }
 
 
+var words = ["Medarbejder rekrutteret til stillingen design og værktøjs manager", "two", "three"];
+
+var paragraph = document.getElementById("beskrivelsestekst");
+
+function updateParagraph() {
+  
+  for (var j = 0; j < words.length; j++) {
+    setTimeout(function (index) {
+      return function () {
+              paragraph.innerHTML = words[index];
+
+ 
+        if (index === words.length - 1) {
+         
+          setTimeout(updateParagraph, 5000);
+        }
+      };
+    }(j), j * 5000);
+  }
+}
+
+
+updateParagraph();
