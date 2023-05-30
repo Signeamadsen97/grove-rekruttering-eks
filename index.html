@@ -8,6 +8,7 @@
     <title>Grove rekruttering</title>
     <link rel="stylesheet" href="rekruttering.css">
     <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
+    <script src="js/carousel.js" defer></script>
 
 </head>
 
@@ -36,7 +37,7 @@
 
         <div class="forside-overskift-container">
             <h1 class="forside-overskrift">
-                Rekruttering med særligt fokus på <span style="color: #FF9557;"> nærvær </span> og <br>
+                Rekruttering med særligt fokus på <span style="color: #FF9557;"> nærvær </span><br> og 
                 din virksomheds <span style="color: #FF9557;">værdier</span>
             </h1>
             <h2 class="forside-underoverskrift">
@@ -44,7 +45,7 @@
                 IT og kommunikation
             </h2>
             <p class="læs-mere">
-                læs mere herunder
+                Læs mere herunder
             </p>
         </div>
 
@@ -58,31 +59,21 @@
             <h3 class="forside-main-overskrift">
                 Vi har tidligere hjulpet andre IT <br> virksomheder på Fyn
             </h3>
-            <div class="testemonials">
-                <div class="testemonial-indhold">
-                    <img class="testemonial-logo-1" src="img/call-to-action-3.svg" alt="call to action">
-                    <p class="testemonial-tekst-1">"Processen var simpel og meget personlig, hvor jeg hele tiden
-                        følte
-                        at mine tanker var vigtige."
-                    </p>
-                </div>
-
-                <div class="testemonial-indhold">
-                    <img class="testemonial-logo-2" src="img/call-to-action-3.svg" alt="call to action">
-                    <p class="testemonial-tekst-2">"Processen var simpel og meget personlig, hvor jeg hele tiden
-                        følte
-                        at mine tanker var vigtige."
-                    </p>
-                </div>
-
-                <div class="testemonial-indhold">
-                    <img class="testemonial-logo-3" src="img/call-to-action-3.svg" alt="call to action">
-                    <p class="testemonial-tekst-3">"Processen var simpel og meget personlig, hvor jeg hele tiden
-                        følte
-                        at mine tanker var vigtige."
-                    </p>
-                </div>
+            
+        </div>
+        <div class="helekarrusellen">
+            <div class="kasse">
+                <div><img id="imageGallery1" src="img/ny-karusel-1.svg" /></div>
+               <div> <img id="imageGallery2" src="img/ny-karusel-2.svg" /></div>
+              <div>  <img id="imageGallery3" src="img/ny-karrusel-3.svg" /></div>
             </div>
+        </div>
+        <div class="carouselknap">
+            <form>
+                <input class="et" type="button" onclick="skiftBillede(1)">
+                <input class="to" type="button" onclick="skiftBillede(2)">
+                <input class="tre" type="button" onclick="skiftBillede(3)">
+            </form>
         </div>
 
         <div class="forside-det-tilbyder-vi">
@@ -118,11 +109,11 @@
 
         <div class="kontakt-knap-container">
             <p>
-                Hvis i har en stilling i vil have hjælp til at udfylde så kontakt os endelig. vi står altid klar til at
+                Hvis I har en stilling I vil have hjælp til at udfylde, så kontakt os endelig. Vi står altid klar til at
                 hjælpe jer med at finde jeres nye kollega.
             </p>
             <button class="kontakt-knap">
-                <a class="kontakt-link" href="kontakt.html">kontakt os her</a>
+                <a class="kontakt-link" href="kontakt.html">Kontakt os her</a>
             </button>
         </div>
 
