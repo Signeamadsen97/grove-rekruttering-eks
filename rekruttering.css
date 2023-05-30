@@ -710,6 +710,10 @@ button[type="submit"]:hover {
         align-items: center;
     }
 
+    .overskrift {
+        font-size: 30px;
+    }
+
     /*navigation*/
 
     .navbar {
