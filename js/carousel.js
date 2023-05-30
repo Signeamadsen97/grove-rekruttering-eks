@@ -13,34 +13,34 @@ document.getElementById('imageGallery1').style.opacity = '0.3';
 document.getElementById('imageGallery2').style.opacity = '1';
 document.getElementById('imageGallery3').style.opacity = '0.3';
 
-function updateImage() {
+function opdateredeBillede() {
     document.getElementById("imageGallery1").src = billeder1[i];
     document.getElementById("imageGallery2").src = billeder2[i];
     document.getElementById("imageGallery3").src = billeder3[i];
 }
 
 function timerStart() {
-tid = setInterval(nextImage, 5000);
+tid = setInterval(autoSkift, 5000);
 }
 function timerStop() {
     clearInterval(tid);
 }
 function autoSkift() {
     i = (i + 1) % billeder1.length;
-    updateImage();
-    updateButtonStyles();
+    opdateredeBillede();
+    opdateretKnap();
 }
 
 function autoSkift() {
     i = (i + 1) % billeder2.length;
-    updateImage();
-    updateButtonStyles();
+    opdateredeBillede();
+    opdateretKnap();
 }
 
 function autoSkift() {
     i = (i + 1) % billeder3.length;
-    updateImage();
-    updateButtonStyles();
+    opdateredeBillede();
+    opdateretKnap();
 }
 
 
@@ -51,7 +51,7 @@ let et = document.querySelector('.et');
 let to = document.querySelector('.to');
 let tre = document.querySelector('.tre');
 
-function updateButtonStyles() {
+function opdateretKnap() {
     if (i == 0){
         et.style.backgroundColor = 'rgb(165, 165, 165)';
             to.style.backgroundColor = 'rgb(207, 207, 207)';
@@ -84,8 +84,8 @@ else if (klikket === 3) {
 }
     
 
-    updateImage();
-    updateButtonStyles();
+    opdateretKnap();
+    opdateredeBillede();
     timerStart();
 }
 
