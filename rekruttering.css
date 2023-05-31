@@ -73,7 +73,7 @@ nav ul a:hover {
     font-weight: bold;
 }
 
-#active {
+.active {
     text-decoration: underline;
     color: #023E8A;
 }
@@ -83,7 +83,7 @@ nav ul a:hover {
     color: #f5f5f5;
 }
 
-.kontaktbtn {
+#kontaktbtn {
     background-color: #FE9F67;
     padding: 8px 20px;
     border-radius: 1000px;
