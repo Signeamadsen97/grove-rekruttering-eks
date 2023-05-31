@@ -58,9 +58,20 @@ function opdateretKnap() {
 }
 
 
-var saetninger = ["Medarbejder rekrutteret til stillingen design og værktøjs manager", "Medarbejder rekrutteret til stillingen backend developer", "Medarbejder rekrutteret til stillingen Technical Publications Writer"];
+let saetninger = ["Medarbejder rekrutteret til stillingen design og værktøjs manager", "Medarbejder rekrutteret til stillingen backend developer", "Medarbejder rekrutteret til stillingen Technical Publications Writer"];
 
-var beskrivelseafvirksomhed = document.getElementById("beskrivelsestekst");
+let beskrivelseafvirksomhed = document.getElementById("beskrivelsestekst");
+
+
+function tidTimer(j) {
+    return function () {
+      beskrivelseafvirksomhed.innerHTML = saetninger[j];
+  
+      if (j == saetninger.length - 1) {
+        setTimeout(skiftTekst, 5000);
+      }
+    };
+  }
 
 function skiftTekst() {
     for (let j = 0; j < saetninger.length; j++) {
@@ -68,16 +79,7 @@ function skiftTekst() {
     }
   }
   
-  function tidTimer(vaerdi) {
-    return function () {
-      beskrivelseafvirksomhed.innerHTML = saetninger[vaerdi];
   
-      if (vaerdi === saetninger.length - 1) {
-        setTimeout(opdaterTekst, 5000);
-      }
-    };
-  }
-
 
 
 function skiftBillede(klikket) {
